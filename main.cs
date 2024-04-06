@@ -18,7 +18,9 @@ class Program
 
             Console.WriteLine("INVALID value. Please enter again.");
         }
-
+      
+        Console.WriteLine();
+      
         while (true)
         {
             Console.Write("Enter oscillate option (Y or N): ");
