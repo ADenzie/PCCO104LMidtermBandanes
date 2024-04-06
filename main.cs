@@ -15,12 +15,11 @@ class Program
 
             if (fanSpeed >= 1 && fanSpeed <= 3)
                 break;
-
             Console.WriteLine("INVALID value. Please enter again.");
         }
       
         Console.WriteLine();
-      
+    
         while (true)
         {
             Console.Write("Enter oscillate option (Y or N): ");
@@ -28,7 +27,6 @@ class Program
 
             if (oscillateOption == "Y" || oscillateOption == "N")
                 break;
-
             Console.WriteLine("INVALID value. Please enter again.");
         }
 
