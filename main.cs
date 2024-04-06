@@ -11,15 +11,15 @@ class Program
         while (true)
         {
             Console.Write("Enter fan speed (1, 2, or 3): ");
-            fanSpeed = Convert.ToInt32(Console.ReadLine());
+            bool isNumber = int.TryParse(Console.ReadLine(), out fanSpeed);
 
-            if (fanSpeed >= 1 && fanSpeed <= 3)
+            if (isNumber && fanSpeed >= 1 && fanSpeed <= 3)
                 break;
             Console.WriteLine("INVALID value. Please enter again.");
         }
-      
+
         Console.WriteLine();
-    
+
         while (true)
         {
             Console.Write("Enter oscillate option (Y or N): ");
